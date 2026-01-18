@@ -12,7 +12,7 @@ public class HomePage extends BasePage{
         driver.get("https://ilcarro.web.app/search");
         PageFactory.initElements(new AjaxElementLocatorFactory(driver,10),this);
     }
-    @FindBy(xpath = "//a[text()='LOGIN']")
+    @FindBy(xpath = "//a[text()='Log in']")
     WebElement bthLogin;
     public void clikBthLogin(){
     bthLogin.click();
